@@ -1,0 +1,29 @@
+name: HelloWorld
+summary: Deploys App Service on ARM
+description: Deploys an Azure App Service within App Service Plan
+runner: ARM
+templatePath: azuredeploy.json
+
+parameters:
+  - id: environmentName
+    name: Environment Name
+    type: string
+    description: Name of the environment
+  - id: location
+    name: Location
+    type: string
+    description: Location of the resources
+  - id: serviceName
+    name: Service Name
+    type: string
+    description: The name of the app service
+  - id: appServicePlanName
+    name: App Service Plan Name
+    type: string
+    description: The  name of the app service plan
+  - id: repoUrl
+    name: Repository URL
+    type: string
+    description: Path the the application source code
+    allowed:
+      - "https://github.com/wbreza/azd-hello-world"
