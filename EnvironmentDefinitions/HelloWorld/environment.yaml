@@ -9,18 +9,6 @@ parameters:
     name: Environment Name
     type: string
     description: Name of the environment
-  - id: location
-    name: Location
-    type: string
-    description: Location of the resources
-  - id: serviceName
-    name: Service Name
-    type: string
-    description: The name of the app service
-  - id: appServicePlanName
-    name: App Service Plan Name
-    type: string
-    description: The  name of the app service plan
   - id: repoUrl
     name: Repository URL
     type: string
