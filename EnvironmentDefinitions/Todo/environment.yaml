@@ -1,0 +1,17 @@
+name: Todo
+summary: Deploys Container App with Bicep
+description: Deploys an Azure Container App within Container App environment
+runner: Bicep
+templatePath: main.bicep
+
+parameters:
+  - id: environmentName
+    name: Environment Name
+    type: string
+    description: Name of the environment
+  - id: repoUrl
+    name: Repository URL
+    type: string
+    description: Path the the application source code
+    allowed:
+      - "https://github.com/azure-samples/todo-nodejs-mongo-aca"
