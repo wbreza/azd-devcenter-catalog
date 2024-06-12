@@ -1,0 +1,1 @@
+Simple Hello World App Service with Bicep

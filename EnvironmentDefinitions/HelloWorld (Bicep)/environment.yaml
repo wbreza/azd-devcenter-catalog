@@ -1,0 +1,17 @@
+name: HelloWorld (Bicep)
+summary: Deploys App Service on Bicep
+description: Deploys an Azure App Service within App Service Plan
+runner: Bicep
+templatePath: main.bicep
+
+parameters:
+  - id: environmentName
+    name: Environment Name
+    type: string
+    description: Name of the environment
+  - id: repoUrl
+    name: Repository URL
+    type: string
+    description: Path the the application source code
+    allowed:
+      - "https://github.com/wbreza/azd-hello-world"
