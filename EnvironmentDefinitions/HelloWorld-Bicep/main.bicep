@@ -45,3 +45,13 @@ module appServicePlan './core/host/appserviceplan.bicep' = {
 output AZURE_LOCATION string = location
 output AZURE_TENANT_ID string = tenant().tenantId
 output SERVICE_API_ENDPOINTS array = [helloworld.outputs.SERVICE_HELLOWORLD_URI]
+
+output TEST_ARRAY array = ['test1', 'test2']
+
+output TEST_OBJECT object = { key1: 'value1', key2: 'value2' }
+
+output TEST_BOOL bool = true
+
+output TEST_INT int = 123
+
+output TEST_STRING string = 'test'
