@@ -1,4 +1,4 @@
-name: HelloWorld (Bicep)
+name: HelloWorld-Bicep
 summary: Deploys App Service on Bicep
 description: Deploys an Azure App Service within App Service Plan
 runner: Bicep
