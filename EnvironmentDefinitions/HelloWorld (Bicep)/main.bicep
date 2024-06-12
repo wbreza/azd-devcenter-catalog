@@ -9,6 +9,8 @@ param location string = resourceGroup().location
 
 param serviceName string = ''
 param appServicePlanName string = ''
+@allowed(['https://github.com/wbreza/azd-hello-world'])
+param repoUrl string = 'https://github.com/wbreza/azd-hello-world'
 
 var abbrs = loadJsonContent('./abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, resourceGroup().name, environmentName, location))
